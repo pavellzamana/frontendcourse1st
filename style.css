@@ -1,0 +1,392 @@
+* {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif; }
+  * .header {
+    background-color: #181A1C;
+    display: flex;
+    height: 62px; }
+    * .header .img {
+      position: relative;
+      left: 130px;
+      top: 6px; }
+    * .header .navigation {
+      display: flex;
+      text-transform: uppercase;
+      color: white;
+      align-items: center;
+      position: relative;
+      right: 148px; }
+      * .header .navigation .button {
+        border: 1px solid #fece1a;
+        padding: 10px 15px 10px 15px;
+        margin-left: 12px; }
+        * .header .navigation .button:hover {
+          background-color: #fece1a;
+          opacity: 0.8;
+          color: #181A1C; }
+  * .home {
+    height: 494px;
+    background-image: url(advertisementBackground.jpg); }
+    * .home .home-ovrl {
+      width: 100%;
+      height: 100%;
+      background: rgba(254, 206, 26, 0.85);
+      vertical-align: middle; }
+      * .home .home-ovrl .homeall {
+        width: 1170px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        * .home .home-ovrl .homeall .homeimage {
+          height: 250px;
+          width: 320px; }
+          * .home .home-ovrl .homeall .homeimage img {
+            height: 100%;
+            width: 100%; }
+        * .home .home-ovrl .homeall .homecontent {
+          width: 585px;
+          padding-left: 115px;
+          height: 256px;
+          margin-left: 15px; }
+          * .home .home-ovrl .homeall .homecontent h2 {
+            font-size: 33px;
+            color: #181A1C;
+            opacity: 1;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-family: 'Roboto', sans-serif; }
+          * .home .home-ovrl .homeall .homecontent h4 {
+            font-size: 22px;
+            color: #181A1C;
+            opacity: 1;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-family: 'Roboto', sans-serif; }
+          * .home .home-ovrl .homeall .homecontent p {
+            font-size: 17px;
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-family: 'Roboto', sans-serif; }
+          * .home .home-ovrl .homeall .homecontent .download {
+            margin-top: 10px;
+            color: #181A1C;
+            height: 20px;
+            width: 81px;
+            border: 1px solid #181A1C;
+            margin-left: 0px;
+            margin-top: 19px;
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif;
+            padding: 15px 30px 15px 30px;
+            text-align: center; }
+            * .home .home-ovrl .homeall .homecontent .download:hover {
+              background-color: #181A1C;
+              color: white; }
+  * .services {
+    height: 586px;
+    background-color: #181A1C; }
+    * .services .servheader {
+      font-size: 38.5px;
+      color: white;
+      text-align: center;
+      padding-top: 60px;
+      padding-bottom: 10px; }
+    * .services .servdesc {
+      font-size: 20px;
+      color: #fece1a;
+      text-align: center;
+      padding-bottom: 20px;
+      padding-top: 10px;
+      display: block;
+      width: 1170px;
+      border-bottom: 1px solid white; }
+    * .services .servall {
+      display: flex;
+      justify-content: center;
+      width: 1170px; }
+      * .services .servall .servcontent {
+        width: 390px;
+        padding-top: 94px; }
+        * .services .servall .servcontent .servimage {
+          text-align: center;
+          width: 150px;
+          height: 150px; }
+          * .services .servall .servcontent .servimage img {
+            border-radius: 50%;
+            height: 80%;
+            width: 80%;
+            border: 2px solid white; }
+            * .services .servall .servcontent .servimage img:hover {
+              height: 100%;
+              width: 100%; }
+        * .services .servall .servcontent .servhead {
+          text-align: center;
+          font-size: 24.5px;
+          color: #fece1a;
+          font-family: 'Roboto', sans-serif; }
+        * .services .servall .servcontent .servcont {
+          text-align: center;
+          color: white;
+          font-family: 'Roboto', sans-serif;
+          font-size: 17px;
+          width: 280px; }
+  * .portfolio {
+    height: 1250px;
+    background-color: #fece1a; }
+    * .portfolio .portheader .whatwedo {
+      font-size: 38.5px;
+      color: #181A1C;
+      text-align: center;
+      padding-top: 60px;
+      padding-bottom: 10px; }
+    * .portfolio .portheader .portdesc {
+      font-size: 20px;
+      color: #181A1C;
+      text-align: center;
+      padding-bottom: 20px;
+      padding-top: 10px;
+      display: block;
+      width: 1120px;
+      border-bottom: 1px solid black; }
+    * .portfolio .portnav {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      max-width: 1170px; }
+      * .portfolio .portnav .portbtn {
+        padding: 8px 25px 8px 25px;
+        border: 1px solid black;
+        margin: 6px;
+        font-family: 'Roboto', sans-serif; }
+        * .portfolio .portnav .portbtn:hover {
+          background-color: black;
+          color: white; }
+    * .portfolio .works {
+      display: flex;
+      flex-wrap: wrap;
+      width: 1210px; }
+      * .portfolio .works .wblock {
+        height: 310px;
+        width: 370px;
+        padding: 15px;
+        padding-top: 0px; }
+        * .portfolio .works .wblock .wimage img {
+          width: 100%;
+          height: 230px; }
+        * .portfolio .works .wblock .wdesc {
+          background-color: black;
+          height: 80px;
+          position: relative;
+          bottom: 15px;
+          vertical-align: middle;
+          text-align: center; }
+          * .portfolio .works .wblock .wdesc .whead {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: #fece1a;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif; }
+          * .portfolio .works .wblock .wdesc .winfo {
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 17px; }
+  * .who {
+    height: 1177px;
+    background-color: black; }
+    * .who .whohead {
+      font-size: 38.5px;
+      color: white;
+      text-align: center;
+      padding-top: 60px;
+      padding-bottom: 10px;
+      font-family: 'Roboto', sans-serif; }
+    * .who .whodesc {
+      font-size: 20px;
+      color: #fece1a;
+      text-align: center;
+      padding-bottom: 20px;
+      padding-top: 10px;
+      display: block;
+      width: 1170px;
+      border-bottom: 1px solid white;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px; }
+    * .who .whocontent {
+      display: flex;
+      width: 1170px;
+      padding-top: 15px;
+      justify-content: space-between; }
+      * .who .whocontent .whobg {
+        margin-left: 0;
+        margin-right: 0; }
+        * .who .whocontent .whobg:hover {
+          background-color: #fece1a; }
+          * .who .whocontent .whobg:hover .name {
+            color: white; }
+          * .who .whocontent .whobg:hover .social .face {
+            background-color: white; }
+          * .who .whocontent .whobg:hover .social .tw {
+            background-color: white; }
+          * .who .whocontent .whobg:hover .social .in {
+            background-color: white; }
+          * .who .whocontent .whobg:hover i {
+            color: #fece1a; }
+      * .who .whocontent .staff {
+        height: 445px;
+        border: 1px solid white;
+        width: 348px;
+        justify-content: center;
+        align-items: center; }
+        * .who .whocontent .staff img {
+          height: 328px;
+          vertical-align: middle;
+          padding: 10px; }
+        * .who .whocontent .staff .name {
+          color: #fece1a;
+          text-align: center;
+          font-size: 25px;
+          padding-top: 10px; }
+        * .who .whocontent .staff .social {
+          display: flex;
+          padding-top: 5px;
+          width: 200px; }
+          * .who .whocontent .staff .social .face {
+            background-color: #fece1a;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px; }
+            * .who .whocontent .staff .social .face i {
+              position: relative;
+              left: 10px;
+              font-size: 25px;
+              top: 8px; }
+            * .who .whocontent .staff .social .face:hover {
+              background-color: black; }
+              * .who .whocontent .staff .social .face:hover i {
+                color: #fece1a; }
+          * .who .whocontent .staff .social .tw {
+            background-color: #fece1a;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px; }
+            * .who .whocontent .staff .social .tw i {
+              position: relative;
+              left: 10px;
+              font-size: 25px;
+              top: 8px; }
+            * .who .whocontent .staff .social .tw:hover {
+              background-color: black; }
+              * .who .whocontent .staff .social .tw:hover i {
+                color: #fece1a; }
+          * .who .whocontent .staff .social .in {
+            background-color: #fece1a;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px; }
+            * .who .whocontent .staff .social .in i {
+              position: relative;
+              left: 10px;
+              font-size: 25px;
+              top: 8px; }
+            * .who .whocontent .staff .social .in:hover {
+              background-color: black; }
+              * .who .whocontent .staff .social .in:hover i {
+                color: #fece1a; }
+    * .who .aboutus {
+      padding-top: 50px;
+      width: 1170px; }
+      * .who .aboutus .aheader {
+        font-size: 24.6px;
+        color: #fece1a;
+        text-align: center; }
+      * .who .aboutus .adesc {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        text-align: center; }
+    * .who .skills {
+      width: 1170px;
+      color: #fece1a;
+      font-size: 24.5px;
+      text-align: left;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    * .who .skillandhire {
+      width: 1170px;
+      display: flex;
+      justify-content: space-between; }
+      * .who .skillandhire .hire {
+        width: 570px;
+        height: 266px;
+        margin: 0;
+        background-color: white; }
+        * .who .skillandhire .hire h1 {
+          text-align: center;
+          font-size: 38.5px;
+          padding: 20px; }
+        * .who .skillandhire .hire p {
+          text-align: center;
+          font-size: 16px;
+          padding-bottom: 25px; }
+        * .who .skillandhire .hire .hirebutton {
+          text-align: center;
+          margin-top: 2px;
+          width: 130px;
+          background-color: #fece1a;
+          font-size: 22px;
+          padding-top: 8px;
+          padding-bottom: 8px; }
+          * .who .skillandhire .hire .hirebutton:hover {
+            background-color: #181A1C;
+            color: #fece1a; }
+      * .who .skillandhire .skilllvl {
+        width: 570px;
+        margin: 0; }
+        * .who .skillandhire .skilllvl .bar {
+          width: 100%;
+          height: 44px;
+          background-color: white;
+          margin-bottom: 30px; }
+          * .who .skillandhire .skilllvl .bar .fill {
+            background-color: #fece1a;
+            text-align: left;
+            height: 100%;
+            float: left; }
+            * .who .skillandhire .skilllvl .bar .fill span {
+              position: relative;
+              top: 13px;
+              padding-left: 10px; }
+  * .question {
+    height: 312px;
+    background-color: #fece1a; }
+    * .question .qtext {
+      font-size: 30px;
+      text-align: center;
+      width: 1170px;
+      padding-top: 70px;
+      padding-bottom: 40px; }
+    * .question .qbutton {
+      font-size: 20px;
+      border: 1px solid black;
+      width: 90px;
+      padding-left: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+  * .footer {
+    font-size: 17px;
+    background-color: #181A1C;
+    color: white;
+    text-align: center; }
+    * .footer span {
+      color: #fece1a; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,493 @@
+$yellow: rgb(254,206,26);
+$black: #181A1C;
+@mixin bodyfont {
+    color: $black;
+    opacity: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin fillbar {
+        background-color: $yellow;
+        text-align: left;
+        height: 100%;
+        float: left;
+        span{
+            position: relative;
+            top: 13px;
+            padding-left: 10px;
+        }
+}
+@mixin icon {
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    i{
+        position: relative;
+        left: 10px;
+        font-size: 25px;
+        top: 8px;
+
+    }
+    &:hover{
+        background-color: black;
+        i{
+            color: $yellow;
+        }
+    }
+}
+@mixin whitefont {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+
+    .header {
+        background-color: $black;
+        display: flex;
+        height: 62px;
+
+        .img {
+            position: relative;
+            left: 130px;
+            top: 6px;
+        }
+
+        .navigation{
+            display: flex;
+            text-transform: uppercase;
+            color: white;
+            align-items: center;
+            position: relative;
+            right: 148px;
+
+            .button {
+                border: 1px solid $yellow;
+                padding: 10px 15px 10px 15px;
+                margin-left: 12px;
+                &:hover{
+                    background-color: $yellow;
+                    opacity: 0.8;
+                    color: $black;
+                }
+            }
+
+        }
+    }
+
+    .home {
+        height: 494px;
+        background-image: url(advertisementBackground.jpg);
+
+        .home-ovrl{
+            width: 100%;
+            height: 100%;
+            background: rgba(254,206,26, 0.85);
+            vertical-align: middle;
+              .homeall{
+                width: 1170px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                    
+                .homeimage{
+                    height: 250px;
+                    width: 320px;
+    
+    
+                    img {
+                        height: 100%;
+                        width: 100%;              
+                    }
+                }
+
+                .homecontent {
+                    width: 585px;
+                    padding-left: 115px;
+                    height: 256px;
+                    margin-left: 15px;
+                    h2{
+                        font-size: 33px;
+                        @include bodyfont
+                    }
+        
+                    h4{
+                        font-size: 22px;
+                        @include bodyfont
+                    }
+        
+                    p {
+                        font-size: 17px;
+                        color: white;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        font-family: 'Roboto', sans-serif;
+                    }
+                    
+                    .download {
+                        margin-top: 10px;
+                        color: $black;
+                        height: 20px;
+                        width: 81px;
+                        border: 1px solid $black;
+                        margin-left: 0px;
+                        margin-top: 19px;
+                        font-size: 18px;
+                        font-family: 'Roboto', sans-serif;
+                        padding: 15px 30px 15px 30px;
+                        text-align: center;
+                        &:hover{
+                            background-color: $black;
+                            color: white;
+                        }
+                    }
+                }
+    
+            }
+
+        }
+    }
+
+    .services{
+        height: 586px;
+        background-color: $black;   
+
+        .servheader{
+            font-size: 38.5px;
+            color: white;
+            text-align: center;
+            padding-top: 60px;
+            padding-bottom: 10px;
+        }
+        .servdesc{
+            font-size: 20px;
+            color: $yellow;
+            text-align: center;
+            padding-bottom: 20px;
+            padding-top: 10px;
+            display: block;
+            width: 1170px;
+            border-bottom: 1px solid white;
+        }
+
+        .servall {
+            display: flex;
+            justify-content: center;
+            width: 1170px;
+            .servcontent{
+                width: 390px;
+                padding-top: 94px;
+                .servimage{
+                    text-align: center;
+                    width: 150px;
+                    height: 150px;
+                    img {
+                        border-radius: 50%;
+                        height: 80%;
+                        width: 80%;
+                        border: 2px solid white;
+                        &:hover{
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+    
+                }
+                .servhead{
+                    text-align: center;
+                    font-size: 24.5px;
+                    color: $yellow;
+                    font-family: 'Roboto', sans-serif;
+                }
+                .servcont{
+                    text-align: center;
+                    @include whitefont;
+                    font-size: 17px;
+                    width:280px;
+                }
+            }
+
+        }
+
+    }
+
+    .portfolio{
+        height: 1250px;
+        background-color: $yellow;   
+        .portheader{
+                .whatwedo{
+                    font-size: 38.5px;
+                    color: $black;
+                    text-align: center;
+                    padding-top: 60px;
+                    padding-bottom: 10px;
+                }
+                .portdesc{
+                    font-size: 20px;
+                    color: $black;
+                    text-align: center;
+                    padding-bottom: 20px;
+                    padding-top: 10px;
+                    display: block;
+                    width: 1120px;
+                    border-bottom: 1px solid black;
+                }
+            }
+        .portnav{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            max-width: 1170px;
+            .portbtn{
+                padding: 8px 25px 8px 25px;
+                border: 1px solid black;
+                margin: 6px;
+                font-family: 'Roboto', sans-serif;
+                &:hover{
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+
+        .works{
+            display: flex;
+            flex-wrap: wrap;
+            width: 1210px;
+            .wblock{
+                height: 310px;
+                width: 370px;
+                padding: 15px;
+                padding-top: 0px;
+                .wimage{
+                    img{
+                        width:100%;
+                        height: 230px;
+                    }
+                }
+                .wdesc{
+                    background-color: black;
+                    height: 80px;
+                    position: relative;
+                    bottom: 15px;
+                    vertical-align: middle;
+                    text-align: center;
+                    .whead{
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        color: $yellow;
+                        font-size: 20px;
+                        font-family: 'Roboto', sans-serif;
+                    }
+                    .winfo{
+                        @include whitefont;
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+    .who{
+        height: 1177px;
+        background-color: black;
+        .whohead{
+            font-size: 38.5px;
+            color: white;
+            text-align: center;
+            padding-top: 60px;
+            padding-bottom: 10px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .whodesc{
+            font-size: 20px;
+            color: $yellow;
+            text-align: center;
+            padding-bottom: 20px;
+            padding-top: 10px;
+            display: block;
+            width: 1170px;
+            border-bottom: 1px solid white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+        }
+            .whocontent{
+                display: flex;
+                width: 1170px;
+                padding-top: 15px;
+                justify-content: space-between;
+                .whobg{
+                    margin-left: 0;
+                    margin-right: 0;
+                    &:hover{
+                        background-color: $yellow;
+                        .name{
+                            color: white;
+                        }
+                        .social{
+                            .face{
+                                background-color: white;
+                            }
+                            .tw{
+                                background-color: white;
+                            }
+                            .in{
+                                background-color: white;
+                            }
+                        }
+
+                       i{
+                            color: $yellow;
+                        }
+                    }
+                }
+               .staff{
+                    height: 445px;
+                    border: 1px solid white;
+                    width: 348px;
+                    justify-content: center;
+                    align-items: center;
+
+                    img{
+                        height: 328px;
+                        vertical-align: middle;
+                        padding: 10px;
+                    }
+                    .name {
+                        color: $yellow;
+                        text-align: center;
+                        font-size: 25px;
+                        padding-top: 10px;
+                    }
+                    .social{
+                        display: flex;
+                        padding-top: 5px;
+                        width: 200px;
+                        .face{
+                            background-color: $yellow;
+                            @include icon;
+                        }
+                        .tw{
+                            background-color: $yellow;
+                            @include icon;
+                        }
+                        .in{
+                            background-color: $yellow;
+                            @include icon;
+                        }
+                    }
+                }
+            }
+            .aboutus{
+                padding-top: 50px;
+                width: 1170px;
+                .aheader{
+                    font-size: 24.6px;
+                    color: $yellow;
+                    text-align: center;
+                }
+                .adesc{
+                    @include whitefont;
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+            .skills{
+                width: 1170px;
+                color: $yellow;
+                font-size: 24.5px;
+                text-align: left;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .skillandhire{
+                width: 1170px;
+                display: flex;
+                justify-content: space-between;
+                .hire{
+                    width: 570px;
+                    height: 266px;
+                    margin: 0;
+                    background-color: white;
+                    h1{
+                        text-align: center;
+                        font-size: 38.5px;
+                        padding: 20px;
+                    }
+                    p{
+                        text-align: center;
+                        font-size: 16px;
+                        padding-bottom: 25px;
+                        
+                    }
+                    .hirebutton{
+                        text-align: center;
+                        margin-top: 2px;
+                        width: 130px;
+                        background-color: $yellow;
+                        font-size: 22px;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        &:hover{
+                            background-color: $black;
+                            color:$yellow;
+                        }
+                    }
+                    
+                }
+                .skilllvl{
+                    width: 570px;
+                    margin: 0;
+                    .bar{
+                        width: 100%;
+                        height: 44px;
+                        background-color: white;
+                        margin-bottom: 30px;
+                        
+                        .fill{
+                            @include fillbar;                          
+                        }
+                    }
+                }
+            }
+    }
+    .question{
+        height: 312px;
+        background-color: $yellow;
+        .qtext{
+            font-size: 30px;
+            text-align: center;
+            width: 1170px;
+            padding-top: 70px;
+            padding-bottom: 40px;
+        }
+        .qbutton{
+            font-size: 20px;
+            border: 1px solid black;
+            width: 90px;
+            padding-left: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+        }
+    }
+    .footer{
+        font-size: 17px;
+        background-color: $black;
+        color: white;
+        text-align: center;
+        span{
+            color: $yellow;
+        }
+    }
+
+
+};
