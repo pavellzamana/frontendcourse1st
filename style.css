@@ -217,90 +217,107 @@
     * .who .whocontent {
       display: flex;
       width: 1170px;
+      height: 480px;
       padding-top: 15px;
       justify-content: space-between; }
       * .who .whocontent .whobg {
         margin-left: 0;
-        margin-right: 0; }
-        * .who .whocontent .whobg:hover {
-          background-color: #fece1a; }
-          * .who .whocontent .whobg:hover .name {
-            color: white; }
-          * .who .whocontent .whobg:hover .social .face {
-            background-color: white; }
-          * .who .whocontent .whobg:hover .social .tw {
-            background-color: white; }
-          * .who .whocontent .whobg:hover .social .in {
-            background-color: white; }
-          * .who .whocontent .whobg:hover i {
-            color: #fece1a; }
-      * .who .whocontent .staff {
-        height: 445px;
-        border: 1px solid white;
-        width: 348px;
-        justify-content: center;
-        align-items: center; }
-        * .who .whocontent .staff img {
-          height: 328px;
-          vertical-align: middle;
-          padding: 10px; }
-        * .who .whocontent .staff .name {
-          color: #fece1a;
-          text-align: center;
-          font-size: 25px;
-          padding-top: 10px; }
-        * .who .whocontent .staff .social {
-          display: flex;
-          padding-top: 5px;
-          width: 200px; }
-          * .who .whocontent .staff .social .face {
-            background-color: #fece1a;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-radius: 50%;
-            height: 40px;
-            width: 40px; }
-            * .who .whocontent .staff .social .face i {
-              position: relative;
-              left: 10px;
-              font-size: 25px;
-              top: 8px; }
-            * .who .whocontent .staff .social .face:hover {
-              background-color: black; }
-              * .who .whocontent .staff .social .face:hover i {
-                color: #fece1a; }
-          * .who .whocontent .staff .social .tw {
-            background-color: #fece1a;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-radius: 50%;
-            height: 40px;
-            width: 40px; }
-            * .who .whocontent .staff .social .tw i {
-              position: relative;
-              left: 10px;
-              font-size: 25px;
-              top: 8px; }
-            * .who .whocontent .staff .social .tw:hover {
-              background-color: black; }
-              * .who .whocontent .staff .social .tw:hover i {
-                color: #fece1a; }
-          * .who .whocontent .staff .social .in {
-            background-color: #fece1a;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-radius: 50%;
-            height: 40px;
-            width: 40px; }
-            * .who .whocontent .staff .social .in i {
-              position: relative;
-              left: 10px;
-              font-size: 25px;
-              top: 8px; }
-            * .who .whocontent .staff .social .in:hover {
-              background-color: black; }
-              * .who .whocontent .staff .social .in:hover i {
-                color: #fece1a; }
+        margin-right: 0;
+        background-size: 330px;
+        background-repeat: no-repeat;
+        background-position-x: 20px;
+        background-position-y: 10px;
+        width: 370px;
+        border: 1px solid white; }
+        * .who .whocontent .whobg .bglayer {
+          width: 100%;
+          height: 100%; }
+          * .who .whocontent .whobg .bglayer .text1 {
+            opacity: 0;
+            font-size: 30px;
+            text-align: center;
+            position: relative;
+            top: 80px; }
+          * .who .whocontent .whobg .bglayer .text2 {
+            opacity: 0;
+            text-align: center;
+            position: relative;
+            top: 120px;
+            width: 80%; }
+          * .who .whocontent .whobg .bglayer .member {
+            position: relative;
+            top: 290px; }
+            * .who .whocontent .whobg .bglayer .member .name {
+              color: #fece1a;
+              text-align: center;
+              font-size: 25px; }
+            * .who .whocontent .whobg .bglayer .member .social {
+              display: flex;
+              padding-top: 5px;
+              width: 200px; }
+              * .who .whocontent .whobg .bglayer .member .social .face {
+                background-color: #fece1a;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 50%;
+                height: 40px;
+                width: 40px; }
+                * .who .whocontent .whobg .bglayer .member .social .face i {
+                  position: relative;
+                  left: 10px;
+                  font-size: 25px;
+                  top: 8px; }
+                * .who .whocontent .whobg .bglayer .member .social .face:hover {
+                  background-color: black; }
+                  * .who .whocontent .whobg .bglayer .member .social .face:hover i {
+                    color: #fece1a; }
+              * .who .whocontent .whobg .bglayer .member .social .tw {
+                background-color: #fece1a;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 50%;
+                height: 40px;
+                width: 40px; }
+                * .who .whocontent .whobg .bglayer .member .social .tw i {
+                  position: relative;
+                  left: 10px;
+                  font-size: 25px;
+                  top: 8px; }
+                * .who .whocontent .whobg .bglayer .member .social .tw:hover {
+                  background-color: black; }
+                  * .who .whocontent .whobg .bglayer .member .social .tw:hover i {
+                    color: #fece1a; }
+              * .who .whocontent .whobg .bglayer .member .social .in {
+                background-color: #fece1a;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 50%;
+                height: 40px;
+                width: 40px; }
+                * .who .whocontent .whobg .bglayer .member .social .in i {
+                  position: relative;
+                  left: 10px;
+                  font-size: 25px;
+                  top: 8px; }
+                * .who .whocontent .whobg .bglayer .member .social .in:hover {
+                  background-color: black; }
+                  * .who .whocontent .whobg .bglayer .member .social .in:hover i {
+                    color: #fece1a; }
+          * .who .whocontent .whobg .bglayer:hover {
+            opacity: 0.85;
+            background-color: #fece1a; }
+            * .who .whocontent .whobg .bglayer:hover .text1 {
+              opacity: 0.85; }
+            * .who .whocontent .whobg .bglayer:hover .text2 {
+              opacity: 0.85; }
+            * .who .whocontent .whobg .bglayer:hover .social .face {
+              background-color: white; }
+            * .who .whocontent .whobg .bglayer:hover .social .tw {
+              background-color: white; }
+            * .who .whocontent .whobg .bglayer:hover .social .in {
+              background-color: white; }
+            * .who .whocontent .whobg .bglayer:hover i {
+              color: #fece1a; }
     * .who .aboutus {
       padding-top: 50px;
       width: 1170px; }
